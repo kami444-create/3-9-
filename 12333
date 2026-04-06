@@ -1,0 +1,18 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+double f(int n, double x) {
+    return pow(x, n) / n;
+}
+
+int main() {
+    double x;
+    cin >> x;
+
+    double z = f(2, x) + f(4, x) + f(6, x);
+
+    cout << z;
+
+    return 0;
+}
