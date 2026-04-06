@@ -1,18 +1,21 @@
-#include <iostream>
-#include <cmath>
-using namespace std;
+#include <iostream>//Ввод/вывод
+#include <cmath>// Подключение математической библиотеки
+using namespace std;// Использование пространства имен std
 
-double f(int n, double x) {
-    return pow(x, n) / n;
+double f(int n, double x)//Функция для вычисления выражения
+{
+    return pow(x,n) /n;  // Возведение x в степень n и деление на n
 }
 
-int main() {
-    double x;
-    cin >> x;
+int main() 
+{
+    double x;  // Объявление переменной для ввода
+    cin >> x;  // Ввод значения x с клавиатуры
 
+    // Вычисление суммы трех выражений:
+    // x^2/2 + x^4/4 + x^6/6
     double z = f(2, x) + f(4, x) + f(6, x);
 
-    cout << z;
-
-    return 0;
+    cout << z;  // Вывод результата
+    return 0;   // Успешное завершение программы
 }
